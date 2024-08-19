@@ -1,11 +1,11 @@
-package edu.uca;
+package edu.uca.producto;
 
-public class Producto {
+public abstract class ProductoBase {
     private int id;
     private String nombre;
     private double precio;
 
-    public Producto(int id, String nombre, double precio) {
+    public ProductoBase(int id, String nombre, double precio) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;

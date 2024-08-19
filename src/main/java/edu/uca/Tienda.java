@@ -1,20 +1,27 @@
 package edu.uca;
 
+import edu.uca.producto.ProductoBase;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Tienda {
-    private List<Producto> inventario = new ArrayList<>();
+    private List<ProductoBase> inventario = new ArrayList<>();
 
     public int getSize(){
         return inventario.size();
     }
 
-    public void agregarProducto(Producto producto) {
+    public void agregarProducto(ProductoBase productoBase) {
+        inventario.add(productoBase);
     }
 
     public void mostrarInventario() {
+
         System.out.println("Inventario: ");
+        for (ProductoBase productoBase :inventario) {
+            System.out.println(productoBase);
+        }
     }
 
 }
